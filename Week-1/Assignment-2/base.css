@@ -1,0 +1,92 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+.body {
+	font-family: serif;
+	color: #3a3a3a;
+	margin: 0px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #e0ebeb;
+	align-items: center;
+	padding: 10px;
+}
+
+header .name{
+    width:150px;
+		font-size: 1.50em;
+		margin: 0;
+    text-align:center;
+}
+
+header .main-nav{
+    list-style:none;
+    display:flex;
+    width:400px;
+		margin-top: 5px;
+    justify-content:space-around;
+}
+
+.main-header {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+  background-color: #e0ebeb;
+}
+
+.banner {
+	background-color: #cce5ff;
+	text-align: center;
+	padding: 60px 0;
+	margin-bottom: 50px;
+}
+.second-header {
+	text-align: center;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+.headline {
+	margin-bottom: 0;
+}
+
+.content{
+  display:flex;
+  justify-content:center;
+}
+.Ctn{
+  font-size: 13px;
+  text-align: center;
+	background-color: #8899aa;
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  margin-top: 3px;
+  padding-top: 10px;
+}
+
+
+.main-footer {
+    text-align: center;
+}
+
+.main-footer span {
+    background-color: #ddeeff;
+    width: 120px;
+    position: relative;top: 30px;
+    padding: 10px;
+    margin: 0 auto;
+}
