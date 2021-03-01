@@ -90,3 +90,10 @@ header .main-nav{
     padding: 10px;
     margin: 0 auto;
 }
+
+@media (min-width: 1200px) {
+	.content {
+		  max-width: 1200px;
+	}
+  
+  }
