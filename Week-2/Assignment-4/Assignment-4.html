@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Assignment-2</title>
+ <link href="base.css" rel="stylesheet">
+</head>
+<body class="body">
+
+   <header>
+     <div class="name">P. LEAGUE</div>
+  	 <ul class="main-nav">
+  			<li>Dreamers</li>
+  			<li>Lioneers</li>
+  			<li>Braves</li>
+  			<li>Pilots </li>
+     </ul>
+   </header>
+
+    <div class="banner">
+      <h1 class="headline">It's Time To Play Basketball</h1>
+  	</div>
+    <!--/.banner-->
+
+    <div class="second-header">
+      <h2 class"section">Team Introduction</h2>
+    </div>
+
+  	<div class="content">
+
+    	<h3><div class="ctn">Dreamers</div></h3>
+
+    	<h3><div class="ctn">Lioneers</div></h3>
+
+    	<h3><div class="ctn">Braves</div></h3>
+
+    	<h3><div class="ctn">Pilots</div></h3>
+
+    </div>
+
+    <div class="content2">
+
+    <h3><div class="ctn">Albert</div></h3>
+
+    <h3><div class="ctn">Tom</div></h3>
+
+    <h3><div class="ctn">Max</div></h3>
+
+    <h3><div class="ctn">Jackie</div></h3>
+
+    </div>
+
+
+    <footer class="main-footer">
+      <span>Call to Action</span>
+  </footer>
+  <script>
+    var headline = document.querySelector('.headline');
+    headline.addEventListener('click', function (event) {
+      this.innerHTML = 'Have a Good Time!';
+    })
+
+    var main_footer = document.querySelector('.main-footer');
+    var content2 = document.querySelector('.content2');
+    main_footer.addEventListener('click', function (event) {
+      content2.classList.add('active');
+    })   
+
+  </script>
+
+
+
+</body>
+</html>
