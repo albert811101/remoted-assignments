@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simple website</title>    
+</head>
+<body>
+  <div id ="sum">
+    <form action="/sum.html" method="post">
+      <label>Choose a number</label>   
+      <input id="num" type="number">
+      <input id="btn" type="button" value="總和" onclick="sum_number()">
+    </form>  
+  </div>
+
+  <script>    
+    function sum_number(){
+    var xhr = new XMLHttpRequest();
+    var input = document.querySelector("#num").value;
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        document.querySelector("#sum").innerHTML = xhr.responseText
+      };
+    };
+    xhr.open('get', `/data?number=${input}`, true);
+    xhr.send(null);
+    document.querySelector("#btn").style.display = "none";
+    }
+  </script>
+
+</body>
+    
+</html>
