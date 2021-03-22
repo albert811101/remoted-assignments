@@ -1,0 +1,8 @@
+form(action='/sign-up', method='post')
+p.signup
+    h2 Sign up
+p.inputbox
+    input(type='text', name='email' placeholder='email' id='email2')
+    input(type="password", name='password', placeholder='password' id='password2')
+    p#usersignup
+    input(type='submit' value='sign up' onclick='signUp()')

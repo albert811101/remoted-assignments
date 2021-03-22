@@ -1,0 +1,9 @@
+form(action='/sign-in', method='post')
+p.signin
+    h2 Sign In    
+p.inputbox
+    input(type='text',name='email', placeholder='email', id='email')
+    input(type="password", name='password', placeholder='password', id='password')
+    p#usersignin  
+    input(type='submit' value='sign in' onclick='signIn()')
+
